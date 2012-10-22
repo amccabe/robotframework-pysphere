@@ -1,0 +1,11 @@
+Introducing robotframework-pysphere
+
+The reason for this tool is to integrate the incredibly useful PySphere project
+with the robotframework test framework.  In the course of working on system
+management software, I found myself cleaning up after test runs where many 
+systems where launched to vCenter or wanting to take snapshots in the course 
+of a test for later debugging.  This was possible in several ways, but the
+cleanest route seemed to be to expose a subset of the VMWare SOAP SDK to 
+robotframework through keywords.  PySphere has already done a lot of this 
+work and I don't want to replicate their effort, so this is just a thin layer
+between the two.
